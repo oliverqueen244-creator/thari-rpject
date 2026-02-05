@@ -1,0 +1,261 @@
+:root {
+  --mustard: #c9a227;
+  --offwhite: #fafaf8;
+  --charcoal: #1e1e1e;
+  --muted: #777;
+  --surface: var(--offwhite);
+  --text-primary: var(--charcoal);
+  --text-muted: var(--muted);
+  --mustard-dark: #a8841f;
+  --border: #e8e5df;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color: var(--text-primary);
+  background: var(--surface);
+  line-height: 1.55;
+}
+
+a {
+  color: inherit;
+}
+
+.container {
+  width: min(1120px, 92vw);
+  margin: 0 auto;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.4rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.brand-mark {
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: 0.12em;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: 0.9rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--text-muted);
+  padding: 0.3rem 0.55rem;
+}
+
+.nav-link-active {
+  color: var(--mustard-dark);
+}
+
+.page-content {
+  flex: 1;
+  padding: 4rem 0;
+}
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 1.2rem 0;
+  margin-top: 2rem;
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.footer-brand {
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin-top: 0;
+}
+
+.hero {
+  max-width: 760px;
+}
+
+.editorial-hero {
+  padding-top: 2rem;
+}
+
+.hero-title {
+  font-size: clamp(3rem, 9vw, 5.75rem);
+  letter-spacing: 0.08em;
+  margin-bottom: 0.5rem;
+}
+
+.hero-subheading {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  max-width: 32ch;
+  margin: 0;
+}
+
+.eyebrow {
+  color: var(--mustard-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.78rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-actions {
+  margin-top: 1.6rem;
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  appearance: none;
+  border: none;
+  border-radius: 0.45rem;
+  padding: 0.72rem 1.05rem;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-primary {
+  color: #fff;
+  background: var(--mustard);
+}
+
+.btn-primary:hover {
+  background: var(--mustard-dark);
+}
+
+.btn-secondary {
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--text-primary);
+}
+
+.section-heading {
+  margin-bottom: 1.2rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
+.catalog-card {
+  display: block;
+  text-decoration: none;
+}
+
+.product-card,
+.detail-panel,
+.auth-form {
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  background: #fff;
+}
+
+.product-image {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 0.45rem;
+  margin-bottom: 0.8rem;
+}
+
+.product-price {
+  color: var(--mustard-dark);
+  font-weight: 600;
+  margin: 0.25rem 0 0;
+}
+
+.pdp-shell {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.pdp-image {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  border: 1px solid var(--border);
+}
+
+.pdp-copy {
+  color: var(--text-muted);
+  max-width: 44ch;
+  margin-bottom: 1.2rem;
+}
+
+.auth-shell {
+  max-width: 460px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+input {
+  padding: 0.68rem;
+  border: 1px solid var(--border);
+  border-radius: 0.45rem;
+  font: inherit;
+}
+
+.account-copy {
+  color: var(--text-muted);
+  margin-top: 0;
+}
+
+.account-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
