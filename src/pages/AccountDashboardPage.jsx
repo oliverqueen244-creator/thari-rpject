@@ -2,22 +2,22 @@ function AccountDashboardPage() {
   return (
     <section>
       <h2>Welcome to your account</h2>
-      <p className="account-copy">This dashboard is a static Phase-1 placeholder.</p>
+      <p className="account-copy">This is a Phase-1 static account overview.</p>
 
       <div className="account-grid">
         <article className="detail-panel">
-          <h3>Orders</h3>
-          <p>Track your purchases and order updates.</p>
+          <h3>My Orders</h3>
+          <p>View your recent orders and order summaries.</p>
         </article>
 
         <article className="detail-panel">
-          <h3>Addresses</h3>
-          <p>Manage delivery and billing addresses.</p>
+          <h3>Saved Addresses</h3>
+          <p>Manage your saved delivery and billing addresses.</p>
         </article>
 
         <article className="detail-panel">
           <h3>Referrals</h3>
-          <p>Invite friends and review referral status.</p>
+          <p>Track referral activity and available invite benefits.</p>
         </article>
       </div>
     </section>

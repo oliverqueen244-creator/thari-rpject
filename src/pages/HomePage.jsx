@@ -7,7 +7,7 @@ function HomePage() {
       <h1 className="hero-title">THARI</h1>
       <p className="hero-subheading">Relaxed tailoring for modern living</p>
       <div className="hero-actions">
-        <Link className="btn btn-primary" to="/products">
+        <Link className="btn btn-primary" to="/shop">
           Shop Collection
         </Link>
       </div>

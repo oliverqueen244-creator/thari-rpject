@@ -1,8 +1,8 @@
 import { Navigate, useLocation } from 'react-router-dom';
+import { useAuth } from './AuthContext';
 
 function ProtectedRoute({ children }) {
-  // Placeholder until Supabase auth provider is connected.
-  const isAuthenticated = Boolean(localStorage.getItem('thari_user'));
+  const { isAuthenticated } = useAuth();
   const location = useLocation();
 
   if (!isAuthenticated) {

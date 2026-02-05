@@ -9,7 +9,7 @@ function ProductListingPage() {
       </div>
       <div className="product-grid catalog-grid">
         {products.map((product) => (
-          <Link className="product-card catalog-card" key={product.id} to={`/products/${product.id}`}>
+          <Link className="product-card catalog-card" key={product.id} to={`/shop/${product.id}`}>
             <img src={product.image} alt={product.name} className="product-image" />
             <h3>{product.name}</h3>
             <p className="product-price">{product.price}</p>

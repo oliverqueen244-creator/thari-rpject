@@ -2,7 +2,7 @@ import { Link, NavLink, Outlet } from 'react-router-dom';
 
 const links = [
   { to: '/', label: 'Home' },
-  { to: '/products', label: 'Shop' },
+  { to: '/shop', label: 'Shop' },
   { to: '/account', label: 'Account' },
 ];
 
@@ -32,7 +32,6 @@ function MainLayout() {
       </main>
       <footer className="site-footer">
         <div className="container footer-inner">
-          <p className="footer-brand">THARI</p>
           <div className="footer-links">
             <a href="#" aria-label="Privacy Policy">
               Privacy Policy
